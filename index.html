@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Oldagram</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="header container">
+        <img src="./images/oldagram-logo.svg" alt="Oldagram logo" />
+        <img src="./images/user-avatar.png" alt="User photo" class="user-pic" />
+      </header>
+
+      <div class="separator"></div>
+
+      <!-- Changing content -->
+      <div class="container" id="post-user">
+        <div class="post-user">
+          <img
+            src="./images/avatar-vangogh.jpg"
+            alt="Vangogh photo"
+            class="user-pic"
+          />
+          <div class="user-text">
+            <p class="user-name">Vincent van Gogh</p>
+            <p class="user-location">Zudert, Netherlands</p>
+          </div>
+        </div>
+      </div>
+      <div id="painting-post">
+        <img
+          src="./images/post-vangogh.jpg"
+          alt="VanGogh autoportrait"
+          class="painting-post"
+        />
+      </div>
+
+      <!-- End Changing content -->
+
+      <div class="container">
+        <div class="icons">
+          <div class="icon like">
+            <svg
+              width="27"
+              height="25"
+              viewBox="0 0 27 25"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.6002 4.7799C20.5999 2.62668 17.3949 2.62668 15.3946 4.7799L15.3568 4.82054C14.4351 5.81276 12.8645 5.81276 11.9428 4.82054L11.905 4.7799C9.90473 2.62668 6.69968 2.62668 4.69939 4.7799C2.65351 6.98221 2.65351 10.5859 4.69939 12.7882L13.6498 22.423L22.6002 12.7882C24.6461 10.5859 24.6461 6.98221 22.6002 4.7799ZM13.6876 3.19411C16.6096 0.0486588 21.3852 0.0486588 24.3073 3.19411C27.1837 6.29048 27.1837 11.2776 24.3073 14.374L15.3568 24.0087C14.4351 25.001 12.8645 25.001 11.9428 24.0087L2.99236 14.374C0.115911 11.2776 0.115911 6.29048 2.99236 3.19411C5.9144 0.0486593 10.69 0.0486593 13.6121 3.19411L13.6498 3.23474L13.6876 3.19411Z"
+              />
+            </svg>
+          </div>
+          <div class="icon comment">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.4656 19.9827C16.0548 20.8407 14.3983 21.3348 12.6264 21.3348C7.47538 21.3348 3.29963 17.159 3.29963 12.008C3.29963 6.85691 7.47538 2.68115 12.6264 2.68115C17.7775 2.68115 21.9532 6.85691 21.9532 12.008C21.9532 14.3272 21.1068 16.4486 19.7059 18.0803C19.6678 18.1247 19.6293 18.1688 19.5903 18.2124L20.0909 20.5459L17.4656 19.9827ZM22.0997 18.8016C23.4729 16.8892 24.2832 14.5412 24.2832 12.008C24.2832 5.57011 19.0643 0.351192 12.6264 0.351192C6.18858 0.351192 0.969666 5.57011 0.969666 12.008C0.969666 18.4458 6.18858 23.6647 12.6264 23.6647C14.4916 23.6647 16.2591 23.2251 17.8262 22.443L23.1246 23.5796L22.0997 18.8016Z"
+              />
+            </svg>
+          </div>
+          <div class="icon share">
+            <svg
+              width="25"
+              height="21"
+              viewBox="0 0 25 21"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.39065 3.99155C0.158854 2.93572 0.905529 0.917297 2.52789 0.917297H22.3081C23.6664 0.917297 24.5053 2.39911 23.8065 3.56383L13.8953 20.0824C13.0829 21.4365 11.0336 21.104 10.691 19.5625L8.60499 10.1753L1.39065 3.99155ZM10.9847 10.1433L12.6487 17.6315L20.1741 5.08915L10.9847 10.1433ZM18.6883 3.24726H4.10251L9.80354 8.13386L18.6883 3.24726Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Changing content -->
+        <p class="likes">21,492 likes</p>
+        <p class="comment">
+          <span>vincey1853</span>
+          just took a few mushrooms lol
+        </p>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
